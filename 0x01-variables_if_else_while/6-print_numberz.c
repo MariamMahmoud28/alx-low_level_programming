@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
-  main -entry point 
+ * main -entry point
  *
  *Description: print 0-9 using putchar
  *		while using int variable
@@ -12,7 +12,8 @@
 int main(void)
 {
 	int digit = 0;
-	while(digit <= 9)
+
+	while (digit <= 9)
 	{
 		/*convert digit to ASCLL repersentation*/
 		putchar(digit + 'g');
