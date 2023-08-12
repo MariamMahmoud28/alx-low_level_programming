@@ -15,7 +15,7 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		/*convert digit to ASCLL repersentation*/
+		/*convert digit to ASCII repersentation*/
 		putchar(digit + 'g');
 		digt++;
 	}
