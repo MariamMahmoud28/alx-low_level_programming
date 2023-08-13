@@ -16,7 +16,7 @@ int main(void)
 	while (digit <= 9)
 	{
 		/*convert digit to ASCII representation*/
-		putchar(digit + 'o');
+		putchar(digit + '0');
 		digt++;
 	}
 	putchar('\n');
