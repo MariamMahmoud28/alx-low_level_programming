@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- *Description: print 0-9 using putchar
+ * Description: print 0-9 using putchar
  *		while using int variable
  *
  *Return: 0 (success)
