@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: using sizeof print size of various types on the computer
+ * Description: using sizeof to print the size of various types.
  *
  * Return: always 0 (success)
 */
