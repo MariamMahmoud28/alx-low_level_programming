@@ -1,4 +1,4 @@
-#include"maim.h"
+#include"main.h"
 
 /**
  * _is lower - function to check if
