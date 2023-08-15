@@ -8,7 +8,7 @@
  * Return: lastdigi
 */
 
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 	int lastDigit;
 
