@@ -3,9 +3,9 @@
 /**
  * print_last_digit - print last digit of a number.
  *
- * Description: 'takes number input'
+ * @n:takes number input
  *
- * Return: lastdigi
+ * Return: lastDigit
 */
 
 int print_last_digit(int n)
