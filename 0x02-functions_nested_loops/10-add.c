@@ -6,7 +6,7 @@
  * @a: first input
  * @b: second input
  *
- * Return: sum of a & d
+ * Return: sum of a & b
 */
 
 
