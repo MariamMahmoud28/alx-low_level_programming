@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * numLength - return the length of string
+ * numLength - retur the length of string
  *
  * @num: operand number
  *
@@ -35,7 +35,7 @@ int main(void)
 {
 	int coun, initial0s;
 
-	unsigned log f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sum = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sum = 0;
 
 	for (count = 1; count <= 98; count++)
 	{
