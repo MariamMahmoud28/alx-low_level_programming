@@ -3,7 +3,7 @@
 /**
  * print_line - print a straight line
  *
- * @n: the number of times the - character
+ * @n: is the number of times the - character
  *		should be printed
 */
 
