@@ -20,7 +20,7 @@ double _sqrt(double x)
 		tmp = sqrt;
 		sqrt = (x / tmp + tmp) / 2;
 	}
-	return (eqrt);
+	return (sqrt);
 }
 
 /**
@@ -38,12 +38,12 @@ void largest_prime_factor(long int num)
 	while (num % 2 == 0)
 		num = num / 2;
 	/* num must be add so we proceed to the next prime number (plust two) */
-	for (prmNu = 3; prmNu <= sqrt(num); prmNu += 2)
+	for (prmNm = 3; prmNm <= sqrt(num); prmNm += 2)
 	{
-		while (num % prmNu == 0)
+		while (num % prmNm == 0)
 		{
-			num = num / prmNu;
-			largest = prmNu;
+			num = num / prmNm;
+			largest = prmNm;
 		}
 	}
 
