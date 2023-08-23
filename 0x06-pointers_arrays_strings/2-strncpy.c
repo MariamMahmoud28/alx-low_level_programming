@@ -21,8 +21,8 @@ char *_strncpy(char *dest, char *src, int n)
 	 * the string placed in dest will not be
 	 * null terminated
 	 */
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
+	for (z = 0; z < n && src[z] != '\0'; z++)
+		dest[z] = src[z];
 	/**
 	 * if the length of the source is less than n
 	 * write additional nullbytes to dest to
@@ -30,8 +30,8 @@ char *_strncpy(char *dest, char *src, int n)
 	 */
 	while (z < n)
 	{
-		dest[i] = '\0';
-		i++;
+		dest[z] = '\0';
+		z++;
 	}
 
 	return (dest);
