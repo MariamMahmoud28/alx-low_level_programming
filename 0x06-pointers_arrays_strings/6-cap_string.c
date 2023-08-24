@@ -21,7 +21,7 @@ int isLower(char c)
 int isDelimiter(char c)
 {
 	int j;
-	char delimiter[] = " \t\n,.!?"() {} ";
+	char delimiter[] = " \t\n,.!?\"(){} ";
 
 	for (j = 0; j < 12; j++)
 		if (c == delimiter[j])
@@ -33,7 +33,7 @@ int isDelimiter(char c)
  * cap_string - capitalizes all words of a string
  * @s: input string
  * Return: string with capitalized words
-*/
+ */
 
 char *cap_string(char *s)
 {
