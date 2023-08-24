@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * isprintableACII - determines if n is aprintable ASCII char
+ * isprintableASCII - determines if n is aprintable ASCII char
  * @n: integer
  * Return: 1 if true, o if false
  */
@@ -26,7 +26,7 @@ void printHexes(char *b, int start, int end)
 	while (j < 10)
 	{
 		if (j < end)
-			printf("%02x", *(b + start + j);
+			printf("%02x", *(b + start + j));
 		else
 			printf(" ");
 		if (j % 2)
