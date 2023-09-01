@@ -4,7 +4,7 @@
  * main-print multiplies two numbers.
  * @argc: int
  * @argv: pointer
- * Return: 0
+ * Return: 0-success
  */
 
 int main(int argc, char *argv[])
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 
