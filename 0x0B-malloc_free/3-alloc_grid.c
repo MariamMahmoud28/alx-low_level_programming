@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * **alloc_gri - returns a pointer
+ * **alloc_grid - returns a pointer
  * @width: pointer
  * @height: pointer
  * Return: value
@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
 			t[f] = malloc(sizeof(**t) * width);
 			if (t[f] == 0)
 			{
-				/*free malloc*/
+				/* malloc*/
 				while (f--)
 					free(t[f]);
 				free(t);
