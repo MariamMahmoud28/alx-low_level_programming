@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - string
+ * _strlen - length string
  * @s: string
  * Return: value
  */
@@ -11,12 +11,13 @@ int _strlen(char *s)
 	int z = 0;
 
 	for (z = 0; s[z] != '\0'; z++)
+		;
 		return (z);
 }
 
 /**
- * *argstostr - concatenates
- * @ac: pointer
+ * *argstostr - concatenates all the arguments 
+ * @ac: int
  * @av: pointer
  * Return: value
  */
