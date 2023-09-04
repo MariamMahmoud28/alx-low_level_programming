@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - length string
+ * _strlen - length
  * @s: string
  * Return: value
  */
@@ -16,7 +16,7 @@ int _strlen(char *s)
 }
 
 /**
- * *argstostr - concatenates all the arguments 
+ * *argstostr - concatenates all the arguments
  * @ac: int
  * @av: pointer
  * Return: value
