@@ -23,7 +23,7 @@ int _strlen(char *s)
 
 char *argstostr(int ac, char **av)
 {
-	int m = 0, n = 0, g = 0, c = 0;
+	int m = 0, n = 0, g = 0, cmpt = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)
@@ -38,12 +38,12 @@ char *argstostr(int ac, char **av)
 
 	for (m = 0; m < ac; m++)
 	{
-		for (g = 0; av[m][g] != '\0'; g++, c++)
-			s[c] = av[m][g];
+		for (g = 0; av[m][g] != '\0'; g++, cmpt++)
+			s[cmpt] = av[m][g];
 
-		s[c] = '\n';
-		c++;
+		s[cmpt] = '\n';
+		cmpt++;
 	}
-	s[c] = '\0';
+	s[cmpt] = '\0';
 	return (s);
 }
