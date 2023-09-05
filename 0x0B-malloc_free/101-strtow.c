@@ -8,9 +8,9 @@
 
 int wrdcnt(char *s)
 {
-	int f = 0, m = 0;
+	int f, m = 0;
 
-	for (; s[f]; f++)
+	for (f = 0; s[f]; f++)
 	{
 		if (s[f] == ' ')
 		{
@@ -25,7 +25,7 @@ int wrdcnt(char *s)
 }
 
 /**
- * **strtow - function
+ * strtow - function
  * @str: pointer
  * Return: value
  */
@@ -62,8 +62,8 @@ char **strtow(char *str)
 				free(k);
 				return (NULL);
 			}
-			for (; c < a; c++)
-			k[wc][c] = str[f + c];
+			for (c = 0; c < a; c++)
+				k[wc][c] = str[f + c];
 			k[wc][c] = '\0';
 			wc++;
 			f += a;
