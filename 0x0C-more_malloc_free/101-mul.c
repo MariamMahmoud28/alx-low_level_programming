@@ -74,7 +74,7 @@ void print_int(unsigned long int n)
  * Return: 0
  */
 
-int main(char const argc, int *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 
@@ -83,8 +83,8 @@ int main(char const argc, int *argv[])
 		_puts("Error");
 		exit(98);
 	}
-	print_int(_atoi(argv[1] * _atoi(argv[2]));
-			_putchar('\n');
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
+	_putchar('\n');
 
 			return (0);
 }
