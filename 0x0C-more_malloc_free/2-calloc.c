@@ -19,9 +19,9 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * *_calloc - function
- * @nmemb: pointer
- * @size: pointer
- * Return: value
+ * @nmemb: array
+ * @size: size
+ * Return: pointer
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
