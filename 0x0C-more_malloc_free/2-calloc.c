@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - fils memory
+ * _memset - fils memory
  * @s: pointer
  * @b: pointer
  * @n: pointer
