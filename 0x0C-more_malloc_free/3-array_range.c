@@ -4,7 +4,7 @@
  * *array_range - function
  * @min: pointer
  * @max: pointer
- * Return: value
+ * Return: arry
  */
 int *array_range(int min, int max)
 {
@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	m = max - min + 1;
 	b = malloc(sizeof(int) * m);
-	if (!m)
+	if (!b)
 		return (NULL);
 	for (j = 0; j < m; j++)
 		b[j] = min++;
