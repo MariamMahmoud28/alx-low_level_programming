@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * *_memset - memory
+ * *_memset - fils memory
  * @s: pointer
  * @b: pointer
  * @n: pointer
- * Return: value
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
