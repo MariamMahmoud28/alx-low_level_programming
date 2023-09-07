@@ -5,7 +5,7 @@
  * @s: pointer
  * @b: pointer
  * @n: pointer
- * Return: s
+ * Return: pointer
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -30,7 +30,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *m;
 
 	if (size == 0 || nmemb == 0)
-		return (NULL);
+		return (0);
 	m = malloc(sizeof(int) * nmemb);
 
 	if (m == 0)
