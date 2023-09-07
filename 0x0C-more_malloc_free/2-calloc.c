@@ -21,7 +21,7 @@ char *_memset(char *s, char b, unsigned int n)
 /**
  * *_calloc - function
  * @nmemb: array
- * @size: size
+ * @size: size of element
  * Return: pointer
  */
 
