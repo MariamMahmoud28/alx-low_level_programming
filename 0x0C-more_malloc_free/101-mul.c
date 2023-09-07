@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - function
+ * _puts - prints a string
  * @str: pointer
  * Return: value
  */
@@ -20,7 +20,7 @@ void _puts(char *str)
 
 /**
  * _atoi - string
- * @s: pointer
+ * @s: string
  * Return: integer
  */
 
@@ -49,7 +49,7 @@ int _atoi(const char *s)
 /**
  * print_int - integer
  * @n: int
- * Return: value
+ * Return: 0
  */
 
 void print_int(unsigned long int n)
@@ -69,7 +69,7 @@ void print_int(unsigned long int n)
 
 /**
  * main - result
- * @argc: pointer
+ * @argc: int
  * @argv: list
  * Return: 0
  */
@@ -80,7 +80,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 	{
-		_puts("Error");
+		_puts("Error ");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
