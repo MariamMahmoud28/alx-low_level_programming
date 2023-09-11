@@ -8,11 +8,11 @@
  */
 int _strlen(const char *str)
 {
-	int l = 0;
+	int length = 0;
 
 	while (*str++)
-		l++;
-	return (l);
+		length++;
+	return (length);
 }
 
 /**
@@ -26,7 +26,8 @@ char *_strcopy(char *dest, char *src)
 	int m;
 
 	for (m = 0; src[m]; m++)
-		dest[m] = '\0';
+		dest[m] = src[m];
+	dest[m] = '\0';
 
 	return (dest);
 }
