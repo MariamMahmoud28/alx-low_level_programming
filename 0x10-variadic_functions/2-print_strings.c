@@ -2,10 +2,10 @@
 
 /**
  * print_strings - function that prints
- * @separator: pointer
- * @n: pointer
- * @...: int
- * @Return: void
+ * @separator: string
+ * @n: number of arguments
+ * @...: string
+ * @Return: value
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
