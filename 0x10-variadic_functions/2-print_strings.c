@@ -9,7 +9,7 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	int m = n;
+	int i = n;
 	char *str;
 	va_list ap;
 
@@ -19,8 +19,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 	va_start(ap, n);
-	while (m--)
+	while (i--)
 		printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)",
-				m ? (separator ? separator : "") : "\n");
+				i ? (separator ? separator : "") : "\n");
 	va_end(ap);
 }
