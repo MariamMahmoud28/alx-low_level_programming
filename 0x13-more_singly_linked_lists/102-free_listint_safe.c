@@ -25,7 +25,7 @@ listint_t *find_listint_loop_fl(listint_t *head)
 
 /**
  * free_listint_safe - function
- * @*h: pointer
+ * @h: pointer
  * Return: void
  */
 size_t free_listint_safe(listint_t **h)
@@ -42,8 +42,20 @@ size_t free_listint_safe(listint_t **h)
 	{
 		len++;
 		next = next->next;
-		free((*h)->next);
-		loop = 0;
+		if (*h == loopnode && loop)
+		{
+			if (loopnode == loopnode->next)
+			{
+				free(*h);
+				break;
+			}
+			len++;
+			next = next->next;
+			free((*h)->next);
+			loop = 0;
+		}
+		free(*h);
 	}
-	free(*h);
+	*h = NULL;
+	return (len);
 }
